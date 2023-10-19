@@ -1,9 +1,18 @@
-
-var amount = 12.50;
-var tax = amount * .08; // 8% sales tax
-var taxExempt = false; // a Boolean variable
-
-if (taxExempt == true) {
-tax = 0;
+let dayNum = 8;
+let dayName;
+switch (dayNum) {
+case 0:
+case 6:
+dayName = "Weekend";
+break;
+case 1:
+case 2:
+case 3:
+case 4:
+case 5:
+dayName = "Weekday";
+break;
+default:
+dayName = "<unknown>";
 }
-console.log(tax);
+console.log( dayName )
