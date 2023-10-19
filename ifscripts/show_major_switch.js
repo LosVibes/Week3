@@ -1,12 +1,12 @@
 //SHOW MAJOR
-const input_code = "ENG"
+const input_code = "CSCI"
 let result_name = ""
 let result_dept = ""
 
 if("BIOL" == input_code){
     result_name = "Biology"
     result_dept = "Science Bld #310"
-}else if("CSCI" = input_code){
+}else if("CSCI" == input_code){
     result_name = "Computer Science"
     result_dept = "Sheppard Hall #314"    
 }else if("ENG" == input_code){
