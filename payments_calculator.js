@@ -1,6 +1,8 @@
 //https://onladder.co.uk/blog/how-to-calculate-mortgage-repayments/
 //https://codepen.io/andarch/pen/qBxpeY
 
+//
+
 // REUSABLE FUNCTION
 function calculate(term, apr, price){
     apr = apr / 100 // convert to fraction from percent 0.033
@@ -15,10 +17,13 @@ function calculate(term, apr, price){
     var payment = price * division_result; 
     return payment; //PAYMENT
 }
+
+//TESTING    
 let term = 25; // 30 years
 let apr = 3.3; //Annnual Percentage rate
 const price = 350000; // price of house
 
 
 const payment = calculate(term, apr, price)
-console.log(payment);
+console.log(payment); // expected 1714.8654830497117
+
